@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppSQLCiudades</string>
+    <string name="btn_alta">Nueva ciudad</string>
+    <string name="btn_consultar">Consultar ciudades</string>
+    <string name="et_nombre_alta">Nombre ciudad</string>
+    <string name="et_provincia_alta">Provincia</string>
+    <string name="et_habitantes_alta">Número de habitantes</string>
+    <string name="btn_guardar_alta">Guardar</string>
+    <string name="btn_cancelar_alta">Cancelar</string>
+</resources>
