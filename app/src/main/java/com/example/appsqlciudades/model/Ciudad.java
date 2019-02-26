@@ -9,6 +9,13 @@ public class Ciudad implements Serializable {
     private String provincia;
     private long habitantes;
 
+    public Ciudad(String nombre, String provincia, long habitantes) {
+        id = -1;
+        this.nombre = nombre;
+        this.provincia = provincia;
+        this.habitantes = habitantes;
+    }
+
     public Ciudad(long id, String nombre, String provincia, long habitantes) {
         this.id = id;
         this.nombre = nombre;
@@ -16,6 +23,8 @@ public class Ciudad implements Serializable {
         this.habitantes = habitantes;
     }
 
+
+    /*********************                     GETTERS                     ************************/
     public long getId() {
         return id;
     }
@@ -30,5 +39,22 @@ public class Ciudad implements Serializable {
 
     public long getHabitantes() {
         return habitantes;
+    }
+
+    /*********************                     SETTERS                     ************************/
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
+    }
+
+    public void setHabitantes(long habitantes) {
+        this.habitantes = habitantes;
     }
 }

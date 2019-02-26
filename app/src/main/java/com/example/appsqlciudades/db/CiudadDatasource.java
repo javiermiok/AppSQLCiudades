@@ -33,6 +33,7 @@ public class CiudadDatasource {
     public Ciudad consultarCiudad(int idCiudad) {
         SQLiteDatabase sdb = openReadable();
 
+        //TODO cambiado por *
         String select = "SELECT * FROM " +CiudadContract.CiudadEntry.TABLE_NAME +
                 " WHERE " + CiudadContract.CiudadEntry.COLUMN_ID + " = ?";
         String[] args = {String.valueOf(idCiudad)};
@@ -119,8 +120,8 @@ public class CiudadDatasource {
         sdb.beginTransaction();
 
         ContentValues cv = new ContentValues();
-        cv.put(CiudadContract.CiudadEntry.COLUMN_NAME, ciudad.getNombre());
-        cv.put(CiudadContract.CiudadEntry.COLUMN_PROVINCE, ciudad.getProvincia());
+        //cv.put(CiudadContract.CiudadEntry.COLUMN_NAME, ciudad.getNombre());
+        //cv.put(CiudadContract.CiudadEntry.COLUMN_PROVINCE, ciudad.getProvincia());
         cv.put(CiudadContract.CiudadEntry.COLUMN_INHAB, ciudad.getHabitantes());
 
         String clausulaWhere = CiudadContract.CiudadEntry.COLUMN_ID + " = ?";
