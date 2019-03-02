@@ -51,7 +51,11 @@ public class AltaActivity extends AppCompatActivity {
             } else {
                 Toast.makeText(this, "No se ha insertado el nuevo contacto", Toast.LENGTH_LONG).show();
             }
+
+            finish();
         }
+
+
     }
 
     public void cancelarAlta(View v) {

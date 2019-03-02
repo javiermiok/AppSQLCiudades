@@ -7,4 +7,10 @@
     <string name="et_habitantes_alta">Número de habitantes</string>
     <string name="btn_guardar_alta">Guardar</string>
     <string name="btn_cancelar_alta">Cancelar</string>
+    <string name="btn_volver_consulta">Volver</string>
+    <string name="tv_ciudad_edit">Ciudad:</string>
+    <string name="tv_provincia_edit">Provincia:</string>
+    <string name="tv_hab_edit">Número de Habitantes:</string>
+    <string name="btn_borrar">Borrar</string>
+    <string name="btn_modificar">Modificar</string>
 </resources>

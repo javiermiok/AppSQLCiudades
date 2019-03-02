@@ -30,7 +30,7 @@ public class CiudadDatasource {
     }
 
     /*--------------------------------           CONSULTA           ----------------------------*/
-    public Ciudad consultarCiudad(int idCiudad) {
+    public Ciudad consultarCiudad(long idCiudad) {
         SQLiteDatabase sdb = openReadable();
 
         //TODO cambiado por *
@@ -142,7 +142,7 @@ public class CiudadDatasource {
 
 
     /*--------------------------------            ELIMINAR          ----------------------------*/
-    public int borrarCiudad(int idCiudad) {
+    public int borrarCiudad(long idCiudad) {
         SQLiteDatabase sdb = openWriteable();
         sdb.beginTransaction();
 
